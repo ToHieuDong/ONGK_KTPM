@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custommer</title>
+</head>
+<body>
+<div>
+  <table>
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td>Phone</td>
+      <td>Email</td>
+      <td>Address</td>
+    </tr>
+
+    <tr th:each="l:${lst}">
+      <td th:text = "${l.getId()}"></td>
+      <td th:text = "${l.getName()}"></td>
+      <td th:text = "${l.getPhone()}"></td>
+      <td th:text = "${l.getEmail()}"></td>
+      <td th:text = "${l.getAddress()}"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
